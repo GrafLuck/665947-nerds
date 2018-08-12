@@ -7,7 +7,6 @@
   <body>
       <header class="main-header">
         <a class="main-header-logo">
-            <!--   Наверное необходимо найти символ Ё латиницей для использования в названии студии   -->
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип дизайн-студии Nerd's">
         </a>
         <nav class="main-navigation">
@@ -17,16 +16,11 @@
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <!--  Думал на счет того как правильно сделать эту навигацию. Список здесь не используется,
-            так как в этом меню всегда один пункт. Видимо, регистрация пользователей не поддерживается. 
-            При этом использовать только одну навигацию выглядит неправильным, так как "Корзина" не выглядит
-            равнозначной всему остальному -->
             <p class="basket-navigation"><a href="#">Корзина</a></p>
         </nav>
       </header>
       <main class="container">
           <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
-          <!--   Совсем не уверен по поводу слайдера. -->
           <div class="slider">
               <ul class="slider-list">
                   <li class="slider-item">
@@ -46,7 +40,11 @@
                   </li>
               </ul>
               <div class="slider-indicator">
-                  <span>o o o</span>
+                  <ul>
+                      <li><span>o</span></li>
+                      <li><span>o</span></li>
+                      <li><span>o</span></li>
+                  </ul>
               </div>
           </div>
           
@@ -89,7 +87,6 @@
                       <th>Минимальная предоплата</th>
                   </tr>
                   <tr>
-                      <!-- Скорее всего лучше вместо sup использовать правила css -->
                       <td>146<sup>%</sup></td>
                       <td>100<sup>%</sup></td>
                       <td>50<sup>%</sup></td>
@@ -123,20 +120,20 @@
           </section>
       </main>
       <footer class="main-footer">
-          <!-- На макете контакты находятся не в футере, но так как контакты являются общей частью обоих страниц,
-            то добавил в футер  -->
           <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
-              <img src="http://placehold.it/150x100" width="150" height="100" alt="Nerd's address">
-              <div class="company-name">Nerds design studio</div>
-              <div class="company-address">
-                  191186, Санкт-Петербург, <br>
-                  ул. Б.Конюшенная, д. 19/8
+              <img src="http://placehold.it/150x100" width="150" height="100" alt="Адрес дизайн-студии Nerd's">
+              <div class="company-contacts">
+                  <div class="company-name">N&#235;rds design studio</div>
+                  <div class="company-address">
+                      191186, Санкт-Петербург, <br>
+                      ул. Б.Конюшенная, д. 19/8
+                  </div>
+                  <div class="company-phone">
+                      <a href="tel: +78122757575">тел. +7 (812) 275-75-75</a>
+                  </div>
+                  <span class="btn mail-btn" href="#">Напишите нам</span>
               </div>
-              <div class="company-phone">
-                  тел. +7 (812) 275-75-75
-              </div>
-              <a class="btn mail-btn" href="#" >Напишите нам</a>
           </section>
           <section class="footer-social">
               <h2 class="visually-hidden">Контакты в социальных сетях</h2>
@@ -149,7 +146,7 @@
               </div>
               <div class="social-discount">
                   <p><b>Давайте дружить, это выгодно!</b></p>
-                  <p>Скида 10% для друзей из социальных сетей.</p>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
               </div>
           </section>
       </footer>
