@@ -26,43 +26,43 @@
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
               <!-- Форма фильтрации -->
               <form action="https://echo.htmlacademy.ru" method="get">
-                  <fieldset>
+                  <fieldset class="price-filter">
                       <legend>Стоимость:</legend>
                       <label>
                           <span class="visually-hidden">Нижняя граница диапазона выбора стоимости</span>
-                          <input type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
+                          <input class="price-range-min" type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
                       </label>
                       <label>
                           <span class="visually-hidden">Верхняя граница диапазона выбора стоимости</span>
-                          <input type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
+                          <input class="price-range-max" type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
                       </label>
 		              <p>
                           <label>
                               От
-                              <input type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
+                              <input class="price-text-min" type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
                           </label>
                           <label>
                               До
-                              <input type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
+                              <input class="price-text-max" type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
                           </label>
                       </p>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="grid-filter">
                       <legend>Сетка:</legend>
-                      <ul>
-                          <li>
+                      <ul class="grid-filter-list">
+                          <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="adaptive-grid" checked>
                                   Адаптивная
                               </label>
                           </li>
-                          <li>
+                          <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="fixed-grid">
                                   Фиксированная
                               </label>
                           </li>
-                          <li>
+                          <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="rubber-grid">
                                   Резиновая
@@ -70,34 +70,34 @@
                           </li>
                       </ul>
                   </fieldset>
-                  <fieldset>
+                  <fieldset class="features-filter">
                       <legend>Особенности:</legend>
-                      <ul>
-                          <li>
+                      <ul class="features-filter-list">
+                          <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="slider" checked>
                                   Слайдер
                               </label>
                           </li>
-                          <li>
+                          <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="block-features">
                                   Блок преимуществ
                               </label>
                           </li>
-                          <li>
+                          <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="news" checked>
                                   Новости
                               </label>
                           </li>
-                          <li>
+                          <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="gallery">
                                   Галерея
                               </label>
                           </li>
-                          <li>
+                          <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="basket">
                                   Корзина
