@@ -24,13 +24,94 @@
           <h1>Магазин готовых шаблонов</h1>
           <section class="filter">
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
-              <!-- Добавить форму фильтрации -->
+              <!-- Форма фильтрации -->
+              <form action="https://echo.htmlacademy.ru" method="get">
+                  <fieldset>
+                      <legend>Стоимость:</legend>
+                      <input type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
+                      <input type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
+		              <p>
+                          От
+                          <input type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
+                          До
+                          <input type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
+                      </p>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Сетка:</legend>
+                      <ul>
+                          <li>
+                              <label>
+                                  <input type="radio" name="filter-grid" value="adaptive-grid" checked>
+                                  Адаптивная
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="radio" name="filter-grid" value="fixed-grid">
+                                  Фиксированная
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="radio" name="filter-grid" value="rubber-grid">
+                                  Резиновая
+                              </label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Особенности:</legend>
+                      <ul>
+                          <li>
+                              <label>
+                                  <input type="checkbox" name="slider" checked>
+                                  Слайдер
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" name="block-features">
+                                  Блок преимуществ
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" name="news" checked>
+                                  Новости
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" name="gallery">
+                                  Галерея
+                              </label>
+                          </li>
+                          <li>
+                              <label>
+                                  <input type="checkbox" name="basket">
+                                  Корзина
+                              </label>
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <button type="submit">Показать</button> 
+              </form>  
           </section>
           
           <section class="sort">
-              <h2 class="visually-hidden">Поля сортировки</h2>
+              <h2 class="visually-hidden">Типы и порядок сортировки</h2>
               <b>Сортировать:</b>
-              <!-- Добавить форму сортировки -->
+              <!-- Форма сортировки -->
+              <ul class="type-sort">
+                  <li>По цене</li>
+                  <li>По типу</li>
+                  <li>По названию</li>
+              </ul>
+              <ul class="order-sort">
+                  <li>От большего к меньшему</li>
+                  <li>От меньшего к большему</li>
+              </ul>
           </section>
           
           <section class="templates">
