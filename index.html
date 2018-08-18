@@ -82,9 +82,9 @@
               <p>С 2004 года любим точность во всем:</p>
               <table class="principle">
                   <tr>
-                      <th>Уровень самоотдачи</th>
-                      <th>Соблюдение сроков</th>
-                      <th>Минимальная предоплата</th>
+                      <th scope="col">Уровень самоотдачи</th>
+                      <th scope="col">Соблюдение сроков</th>
+                      <th scope="col">Минимальная предоплата</th>
                   </tr>
                   <tr>
                       <td>146<sup>%</sup></td>
@@ -98,22 +98,22 @@
               <ul class="clients-list">
                   <li class="clients-item">
                       <a href="https://htmlacademy.ru/intensive/htmlcss">
-                          <img src="img/logo-1.png" width="199" height="68" alt="HTML Academy">
+                          <img src="img/logo-1.png" width="199" height="68" alt="Логотип компании HTML Academy">
                       </a>
                   </li>
                   <li class="clients-item">
                       <a href="#">
-                          <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп Бородинский">
+                          <img src="img/logo-2.png" width="209" height="90" alt="Логотип компании Барбершоп Бородинский">
                       </a>
                   </li>
                   <li class="clients-item">
                       <a href="#">
-                          <img src="img/logo-3.png" width="185" height="52" alt="Продуктовый лендинг Pink">
+                          <img src="img/logo-3.png" width="185" height="52" alt="Логотип продуктового лендинга Pink">
                       </a>
                   </li>
                   <li class="clients-item">
                       <a href="#">
-                          <img src="img/logo-4.png" width="173" height="84" alt="Интернет-магазин вязаных игрушек Mishka">
+                          <img src="img/logo-4.png" width="173" height="84" alt="Логотип интернет-магазина вязаных игрушек Mishka">
                       </a>
                   </li>
               </ul>
@@ -122,7 +122,7 @@
       <footer class="main-footer">
           <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
-              <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's">
+              <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's: Санкт-Петербург, улица Большая Конюшенная дом 19/8">
               <div class="company-contacts">
                   <div class="company-name">N&#235;rds design studio</div>
                   <div class="company-address">
@@ -157,27 +157,27 @@
               <p>
                   <label>
                       Ваше имя:
-                      <input type="text" name="name" placeholder="Имя Фамилия">
+                      <span class="visually-hidden">например, Иван Петров</span>
+                      <input type="text" name="name" placeholder="Имя Фамилия" required>
                   </label>
               </p>
               <p>
                   <label>
                       Ваш e-mail:
-                      <input type="email" name="email" placeholder="email@example.com">
+                      <span class="visually-hidden">например, ivan.petrov@gmail.com</span>
+                      <input type="email" name="email" placeholder="email@example.com" required>
                   </label>
               </p>
               <p>
                   <label>
                       Текст письма
-                      <textarea name="mail" placeholder="В свободной форме"></textarea>
+                      <span class="visually-hidden">в свободной форме</span>
+                      <textarea name="mail" placeholder="В свободной форме" required></textarea>
                   </label>
               </p>
               <button type="submit" class="btn modal-btn">Отправить</button>
           </form>
           <button class="modal-close" type="button">Закрыть</button>
-          <!-- Здесь будет форма -->
-          
       </section>
-      
   </body>
 </html>

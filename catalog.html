@@ -291,19 +291,22 @@
               <p>
                   <label>
                       Ваше имя:
-                      <input type="text" name="name" placeholder="Имя Фамилия">
+                      <span class="visually-hidden">например, Иван Петров</span>
+                      <input type="text" name="name" placeholder="Имя Фамилия" required>
                   </label>
               </p>
               <p>
                   <label>
                       Ваш e-mail:
-                      <input type="email" name="email" placeholder="email@example.com">
+                      <span class="visually-hidden">например, ivan.petrov@gmail.com</span>
+                      <input type="email" name="email" placeholder="email@example.com" required>
                   </label>
               </p>
               <p>
                   <label>
                       Текст письма
-                      <textarea name="mail" placeholder="В свободной форме"></textarea>
+                      <span class="visually-hidden">в свободной форме</span>
+                      <textarea name="mail" placeholder="В свободной форме" required></textarea>
                   </label>
               </p>
               <button type="submit" class="btn modal-btn">Отправить</button>
