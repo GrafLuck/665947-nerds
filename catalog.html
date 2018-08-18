@@ -28,13 +28,23 @@
               <form action="https://echo.htmlacademy.ru" method="get">
                   <fieldset>
                       <legend>Стоимость:</legend>
-                      <input type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
-                      <input type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
+                      <label>
+                          <span class="visually-hidden">Нижняя граница диапазона выбора стоимости</span>
+                          <input type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
+                      </label>
+                      <label>
+                          <span class="visually-hidden">Верхняя граница диапазона выбора стоимости</span>
+                          <input type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
+                      </label>
 		              <p>
-                          От
-                          <input type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
-                          До
-                          <input type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
+                          <label>
+                              От
+                              <input type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
+                          </label>
+                          <label>
+                              До
+                              <input type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
+                          </label>
                       </p>
                   </fieldset>
                   <fieldset>
@@ -246,7 +256,7 @@
       <footer class="main-footer">
           <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
-              <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's">
+              <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's: Санкт-Петербург, улица Большая Конюшенная дом 19/8">
               <div class="company-contacts">
                   <div class="company-name">N&#235;rds design studio</div>
                   <div class="company-address">
@@ -275,11 +285,30 @@
           </section>
       </footer>
       
-      <section class="modal modal-write-us">
+       <section class="modal modal-write-us">
           <h2>Напишите нам</h2>
-          <span class="modal-close">x</span>
-          <!-- Здесь будет форма -->
-          <span class="btn modal-btn">Отправить</span>
+          <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                  <label>
+                      Ваше имя:
+                      <input type="text" name="name" placeholder="Имя Фамилия">
+                  </label>
+              </p>
+              <p>
+                  <label>
+                      Ваш e-mail:
+                      <input type="email" name="email" placeholder="email@example.com">
+                  </label>
+              </p>
+              <p>
+                  <label>
+                      Текст письма
+                      <textarea name="mail" placeholder="В свободной форме"></textarea>
+                  </label>
+              </p>
+              <button type="submit" class="btn modal-btn">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
       </section>
     </body>
 </html>
