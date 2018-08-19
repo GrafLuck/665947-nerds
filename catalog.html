@@ -113,15 +113,46 @@
               <h2 class="visually-hidden">Типы и порядок сортировки</h2>
               <b>Сортировать:</b>
               <!-- Форма сортировки -->
-              <ul class="type-sort">
-                  <li>По цене</li>
-                  <li>По типу</li>
-                  <li>По названию</li>
-              </ul>
-              <ul class="order-sort">
-                  <li>От большего к меньшему</li>
-                  <li>От меньшего к большему</li>
-              </ul>
+              <fieldset class="sort-view">
+                  <legend><span class="visual-hidden">Выбор вида сортировки шаблонов макетов</span></legend>
+                  <ul >
+                      <li>
+                          <label>
+                              <input class="visually-hidden" type="radio" name="sort-view" value="price-view" checked>
+                              По цене
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input class="visually-hidden" type="radio" name="sort-view" value="type-view">
+                              По типу
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input class="visually-hidden" type="radio" name="sort-view" value="name-view">
+                              По названию
+                          </label>
+                      </li>
+                  </ul>
+              </fieldset>
+              <fieldset class="sort-order">
+                  <legend><span class="visually-hidden">Выбор порядка сортировки шаблонов макетов</span></legend>
+                  <ul>
+                      <li>
+                          <label>
+                              <input class="visually-hidden" type="radio" name="sort-order" value="big-to-small-view" checked>
+                              От большего к меньшему
+                          </label>
+                      </li>
+                      <li>
+                          <label>
+                              <input class="visually-hidden" type="radio" name="sort-order" value="small-to-big-view">
+                              От меньшего к большему
+                          </label>
+                      </li>
+                  </ul>
+              </fieldset>
           </section>
           
           <section class="templates">
@@ -288,28 +319,28 @@
        <section class="modal modal-write-us">
           <h2>Напишите нам</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
+              <p class="modal-name">
                   <label>
                       Ваше имя:
                       <span class="visually-hidden">например, Иван Петров</span>
                       <input type="text" name="name" placeholder="Имя Фамилия" required>
                   </label>
               </p>
-              <p>
+              <p class="modal-male">
                   <label>
                       Ваш e-mail:
                       <span class="visually-hidden">например, ivan.petrov@gmail.com</span>
                       <input type="email" name="email" placeholder="email@example.com" required>
                   </label>
               </p>
-              <p>
+              <p class="modal-letter">
                   <label>
                       Текст письма
                       <span class="visually-hidden">в свободной форме</span>
                       <textarea name="mail" placeholder="В свободной форме" required></textarea>
                   </label>
               </p>
-              <button type="submit" class="btn modal-btn">Отправить</button>
+              <button class="btn modal-btn" type="submit">Отправить</button>
           </form>
           <button class="modal-close" type="button">Закрыть</button>
       </section>
