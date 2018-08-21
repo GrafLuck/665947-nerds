@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-navigation {
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus {
+    color: #fb565a;
+}
+
+/*Как сделать, чтобы по нажатию клавиатуры правило тоже срабатывало?*/
+.site-navigation a:active,
+.user-navigation a:active {
+    opacity: 0.3;
+    color: #000000;
+}
+
+.slider {
+    background-color: #eeeeee;
+}
+
+.slider-list {
+    list-style: none;
+}
+
+.slider-item {
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.slider-item:nth-child(1) {
+    background-image: url(../img/slider1.png);
+}
+
+.slider-item:nth-child(2) {
+    background-image: url(../img/slider2.png);
+}
+
+.slider-item:nth-child(3) {
+    background-image: url(../img/slider3.png);
+}
+
+.slider-item b {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.slider-btn {
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    /*  Цвет пока только, чтобы увидеть текст на фоне  */
+    color: #ffffff;
+    
+    background-color: red;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-item h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services-item {
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.services-item:nth-child(1) {
+    background-image: url(../img/illustration-1.png);  
+}
+
+.services-item:nth-child(2) {
+    background-image: url(../img/illustration-2.png);  
+}
+
+.services-item:nth-child(3) {
+    background-image: url(../img/illustration-3.png);  
+}
+
+.services-item a {
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/*Добавил цвет фона, чтобы видеть текст белого цвета*/
+.order-btn-web {
+    background-color: #fb565a;
+}
+
+.order-btn-app {
+    background-color: #00ca74;
+}
+
+.order-btn-prs {
+    background-color: #efc84a;
+}
+
+.about-us b {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+/*Перепроверить параметры в Фотошопе*/
+.about-us p:nth-of-type(3) { 
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.about-us p:nth-of-type(4) {
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.principle tr:first-of-type {
+    line-height: 18px;
+}
+
+.principle tr:last-of-type {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 700;
+/*    line-height: 10.06px;*/
+}
+
+.clients-list {
+    list-style: none;
+}
+
+.company-name {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.company-address {
+    color: #666666;
+    line-height: 18px;
+}
+
+.company-phone a {
+    color: #666666;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.mail-btn {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    
+    background-color: #fb565a;
+} 
+/*
+
+*/
