@@ -90,6 +90,10 @@ a {
     background-color: red;
 }
 
+.slider-btn:active {
+    opacity: 0.3;
+}
+
 .services-list {
     list-style: none;
 }
@@ -138,6 +142,18 @@ a {
     background-color: #efc84a;
 }
 
+.orden-btn-web:active {
+    opacity: 0.3;
+}
+
+.orden-btn-app:active {
+    opacity: 0.3;
+}
+
+.orden-btn-prs:active {
+    opacity: 0.3;
+}
+
 .about-us b {
     color: #000000;
     font-size: 45px;
@@ -164,15 +180,19 @@ a {
     text-transform: uppercase;
 }
 
-.principle tr:first-of-type {
+.principle tr:last-of-type {
     line-height: 18px;
 }
 
-.principle tr:last-of-type {
+.principle tr:first-of-type {
     color: #000000;
     font-size: 45px;
     font-weight: 700;
-/*    line-height: 10.06px;*/
+}
+
+.principle th {
+    color: #283136;
+    line-height: 18px;
 }
 
 .clients-list {
@@ -206,6 +226,143 @@ a {
     
     background-color: #fb565a;
 } 
+
+.social-btn-list {
+    list-style: none;
+}
+
+.social-btn-item a {
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.social-discount b {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.social-discount p:last-of-type {
+    line-height: 22px;
+    color: #444444;
+}
+
+.modal-write-us h2 {
+    color: #000000;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.modal-write-us label {
+    color: #000000;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.modal-btn {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+/*Страница с каталогом*/
+/*Форма фильтрации*/
+.filter legend {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.grid-filter-item label {
+    color: #283136;
+    line-height: 20px;
+}
+
+.grid-filter-item label:hover,
+.grid-filter-item label:focus {
+    color: #000000;
+}
+
+.grid-filter-item label:disabled {
+    opacity: 0.3;
+    color: #283136;
+}
+
+
+.filter button {
+    color: #000000;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.filter button:active {
+    opacity: 0.3;
+}
+
+.grid-filter-list,
+.features-filter-list {
+    list-style: none;
+}
+
+.features-filter-item label:hover,
+.features-filter-item label:focus {
+    
+}
+
+.features-filter-item label:disabled {
+    opacity: 0.3;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.templates-list {
+    list-style: none;
+}
+
+.templates-item h3 {
+    text-align: center;
+}
+
+.templates-item a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.templates-price p {
+    color: #666666;
+    line-height: 18px;
+    text-align: center;
+}
+
+.templates-price button {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: #000000;
+    font-weight: 500;
+    line-height: 18px;
+}
+
 /*
 
 */
