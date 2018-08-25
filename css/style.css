@@ -19,6 +19,15 @@ a {
     background-color: #eeeeee;
 }
 
+.active-logo-link img:hover,
+.active-logo-link img:focus {
+    opacity: 0.8;
+}
+
+.active-logo-link img:active {
+    opacity: 0.3;
+}
+
 .main-navigation {
     line-height: 30px;
     font-weight: 500;
@@ -46,6 +55,22 @@ a {
 .user-navigation a:active {
     opacity: 0.3;
     color: #000000;
+}
+
+/*Правило, позволяющее убрать выделение на текущей позиции меню при наведении и нажатии. Также добавляет нижнее подчеркивание, если находимся на странице, на которую ведет данный пункт меню */
+.site-navigation .site-navigation-current,
+.site-navigation .site-navigation-current:hover,
+.site-navigation .site-navigation-current:focus,
+.site-navigation .site-navigation-current:active,
+.user-navigation .user-navigation-current,
+.user-navigation .user-navigation-current:hover,
+.user-navigation .user-navigation-current:focus,
+.user-navigation .user-navigation-current:active
+{
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 5px; /* Пока отступ сделан на глаз*/
+    border-bottom: 2px solid #fb565a;
 }
 
 .slider {
@@ -84,14 +109,22 @@ a {
     line-height: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    /*  Цвет пока только, чтобы увидеть текст на фоне  */
     color: #ffffff;
-    
-    background-color: red;
+    background-color: #fb565a;
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+    background-color: #e74246;
 }
 
 .slider-btn:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
+.slider-indicator ul {
+    list-style: none;
 }
 
 .services-list {
@@ -123,7 +156,7 @@ a {
     background-image: url(../img/illustration-3.png);  
 }
 
-.services-item a {
+.services-item .btn {
     line-height: 18px;
     font-weight: 500;
     color: #ffffff;
@@ -134,24 +167,42 @@ a {
     background-color: #fb565a;
 }
 
+.order-btn-web:hover,
+.order-btn-web:focus {
+    background-color: #e74246;
+}
+
+.order-btn-web:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
+
 .order-btn-app {
     background-color: #00ca74;
+}
+
+.order-btn-app:hover,
+.order-btn-app:focus {
+    background-color: #00bc6c;
+}
+
+.order-btn-app:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #00aa62;
 }
 
 .order-btn-prs {
     background-color: #efc84a;
 }
 
-.orden-btn-web:active {
-    opacity: 0.3;
+.order-btn-prs:hover,
+.order-btn-prs:focus {
+    background-color: #eab534;
 }
 
-.orden-btn-app:active {
-    opacity: 0.3;
-}
-
-.orden-btn-prs:active {
-    opacity: 0.3;
+.order-btn-prs:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #e5a722;
 }
 
 .about-us b {
@@ -199,6 +250,19 @@ a {
     list-style: none;
 }
 
+.clients-item img {
+    opacity: 0.2;
+}
+
+.clients-item img:hover,
+.clients-item img:focus {
+    opacity: 1;
+}
+
+.clients-item img:active {
+    opacity: 0.1;
+}
+
 .company-name {
     color: #000000;
     font-size: 18px;
@@ -223,9 +287,18 @@ a {
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
-    
     background-color: #fb565a;
 } 
+
+.mail-btn:hover,
+.mail-btn:focus {
+    background-color: #e74246;
+}
+
+.mail-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
 
 .social-btn-list {
     list-style: none;
@@ -261,12 +334,49 @@ a {
     line-height: 18px;
 }
 
+.modal-write-us input,
+.modal-write-us textarea {
+    outline: none;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5);
+    background-color: #ffffff;
+    border: 2px solid #d7dcde;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+    border-color: #b4b9bb;
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+    border-color: #000000;
+    color: rgba(68, 68, 68, 1);
+}
+
+.modal-write-us input:invalid,
+.modal-write-us textarea:invalid {
+    border-color: #e74246;
+    color: rgba(231, 66, 70, 1);
+}
+
 .modal-btn {
     color: #ffffff;
     font-weight: 500;
     line-height: 18px;
+    text-transform: uppercase;
+    background-color: #fb565a;
 }
 
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #e74246;
+}
+
+.modal-btn:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #d7373b;
+}
 
 /*Страница с каталогом*/
 /*Форма фильтрации*/
