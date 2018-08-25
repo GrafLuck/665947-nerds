@@ -105,10 +105,14 @@ a {
     color: #000000;
 }
 
-.slider-btn {
+.btn {
     line-height: 18px;
     font-weight: 500;
     text-transform: uppercase;
+    border: none;
+}
+
+.slider-btn {
     color: #ffffff;
     background-color: #fb565a;
 }
@@ -156,14 +160,9 @@ a {
     background-image: url(../img/illustration-3.png);  
 }
 
-.services-item .btn {
-    line-height: 18px;
-    font-weight: 500;
-    color: #ffffff;
-    text-transform: uppercase;
-}
 /*Добавил цвет фона, чтобы видеть текст белого цвета*/
 .order-btn-web {
+    color: #ffffff;
     background-color: #fb565a;
 }
 
@@ -178,6 +177,7 @@ a {
 }
 
 .order-btn-app {
+    color: #ffffff;
     background-color: #00ca74;
 }
 
@@ -192,6 +192,7 @@ a {
 }
 
 .order-btn-prs {
+    color: #ffffff;
     background-color: #efc84a;
 }
 
@@ -284,9 +285,6 @@ a {
 
 .mail-btn {
     color: #ffffff;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
     background-color: #fb565a;
 } 
 
@@ -362,9 +360,6 @@ a {
 
 .modal-btn {
     color: #ffffff;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
     background-color: #fb565a;
 }
 
@@ -380,38 +375,16 @@ a {
 
 /*Страница с каталогом*/
 /*Форма фильтрации*/
+.filter fieldset,
+.sort fieldset {
+    border: none;
+}
+
 .filter legend {
     color: #000000;
     font-size: 18px;
     font-weight: 700;
-    line-height: 30px;
     text-transform: uppercase;
-}
-
-.grid-filter-item label {
-    color: #283136;
-    line-height: 20px;
-}
-
-.grid-filter-item label:hover,
-.grid-filter-item label:focus {
-    color: #000000;
-}
-
-.grid-filter-item label:disabled {
-    opacity: 0.3;
-    color: #283136;
-}
-
-
-.filter button {
-    color: #000000;
-    font-weight: 500;
-    line-height: 18px;
-}
-
-.filter button:active {
-    opacity: 0.3;
 }
 
 .grid-filter-list,
@@ -419,19 +392,75 @@ a {
     list-style: none;
 }
 
-.features-filter-item label:hover,
-.features-filter-item label:focus {
-    
+.price-from,
+.price-to {
+    text-transform: uppercase;
 }
 
-.features-filter-item label:disabled {
-    opacity: 0.3;
-    color: #283136;
-    font-size: 16px;
-    font-weight: 400;
+.price-text-min,
+.price-text-max {
+    background-color: #eeeeee;
+    border: none;
+    text-align: center;
+}
+
+/*Стилизация фильтра сетки и фильтра особенностей*/
+.grid-filter-item label,
+.features-filter-item label {
+    color: rgba(40, 49, 54, 0.5);
     line-height: 20px;
 }
 
+.grid-filter-item label:hover,
+.features-filter-item label:hover,
+.grid-filter-item label:focus,
+.features-filter-item label:focus {
+    color: rgba(40, 49, 54, 1);
+}
+
+.grid-filter-item input[disabled] + span,
+.features-filter-item input[disabled] + span {
+    color: rgba(40, 49, 54, 0.3);
+}
+
+/*Кнопка отправки формы фильтрации*/
+.filter-btn {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: #dfdfdf;
+}
+
+.filter-btn:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+}
+
+/*Стилизация кнопок сортировки*/
+.sort-view a,
+.sort-order a {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.sort-view a:hover,
+.sort-view a:focus,
+.sort-order a:hover, 
+.sort-order a:focus {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-view a:active,
+.sort-order a:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+/*Стилизация карточек шаблонов*/
 .templates-list {
     list-style: none;
 }
@@ -455,24 +484,53 @@ a {
     text-align: center;
 }
 
-.templates-price button {
-    color: #ffffff;
-    font-weight: 500;
-    line-height: 18px;
-    text-transform: uppercase;
-    text-align: center;
+.templates-indicator {
+    opacity: 0.1;
 }
 
+.template-wrapper:hover .templates-indicator {
+    opacity: 1;
+}
+
+/*Кнопка покупки шаблона*/
+.btn-templates {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+
+.btn-templates:hover,
+.btn-templates:focus {
+    background-color: #e74246;
+}
+
+.btn-templates:active {
+    background-color: #d7373b;
+}
+
+/*Переключатель страниц шаблонов*/
 .pagination-list {
     list-style: none;
 }
 
-.pagination-item a {
+.pagination-btn {
     color: #000000;
-    font-weight: 500;
-    line-height: 18px;
+    background-color: #eeeeee;
 }
 
+.pagination-btn:hover,
+.pagination-btn:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-btn:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+}
+
+.pagination-current-btn {  
+    color: #000000;
+    background-color: #ffffff;
+}
 /*
 
 */

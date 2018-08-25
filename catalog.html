@@ -40,11 +40,11 @@
                           <input class="price-range-max" type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
                       </label>
 		              <p>
-                          <label>
+                          <label class="price-from">
                               От
                               <input class="price-text-min" type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
                           </label>
-                          <label>
+                          <label class="price-to">
                               До
                               <input class="price-text-max" type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
                           </label>
@@ -56,19 +56,19 @@
                           <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="adaptive-grid" checked>
-                                  Адаптивная
+                                  <span>Адаптивная</span>
                               </label>
                           </li>
                           <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="fixed-grid">
-                                  Фиксированная
+                                  <span>Фиксированная</span>
                               </label>
                           </li>
                           <li class="grid-filter-item">
                               <label>
                                   <input type="radio" name="filter-grid" value="rubber-grid">
-                                  Резиновая
+                                  <span>Резиновая</span>
                               </label>
                           </li>
                       </ul>
@@ -79,36 +79,36 @@
                           <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="slider" checked>
-                                  Слайдер
+                                  <span>Слайдер</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="block-features">
-                                  Блок преимуществ
+                                  <span>Блок преимуществ</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="news" checked>
-                                  Новости
+                                  <span>Новости</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="gallery">
-                                  Галерея
+                                  <span>Галерея</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
                                   <input type="checkbox" name="basket">
-                                  Корзина
+                                  <span>Корзина</span>
                               </label>
                           </li>
                       </ul>
                   </fieldset>
-                  <button type="submit">Показать</button> 
+                  <button class="btn filter-btn" type="submit">Показать</button> 
               </form>  
           </section>
           
@@ -118,42 +118,17 @@
               <!-- Форма сортировки -->
               <fieldset class="sort-view">
                   <legend><span class="visual-hidden">Выбор вида сортировки шаблонов макетов</span></legend>
-                  <ul >
-                      <li>
-                          <label>
-                              <input class="visually-hidden" type="radio" name="sort-view" value="price-view" checked>
-                              По цене
-                          </label>
-                      </li>
-                      <li>
-                          <label>
-                              <input class="visually-hidden" type="radio" name="sort-view" value="type-view">
-                              По типу
-                          </label>
-                      </li>
-                      <li>
-                          <label>
-                              <input class="visually-hidden" type="radio" name="sort-view" value="name-view">
-                              По названию
-                          </label>
-                      </li>
+                  <ul>
+                      <a class="sort-by-price" href="#">По цене</a>
+                      <a class="sort-by-type" href="#">По типу</a>
+                      <a class="sort-by-name" href="#">По названию</a>
                   </ul>
               </fieldset>
               <fieldset class="sort-order">
                   <legend><span class="visually-hidden">Выбор порядка сортировки шаблонов макетов</span></legend>
                   <ul>
-                      <li>
-                          <label>
-                              <input class="visually-hidden" type="radio" name="sort-order" value="big-to-small-view" checked>
-                              От большего к меньшему
-                          </label>
-                      </li>
-                      <li>
-                          <label>
-                              <input class="visually-hidden" type="radio" name="sort-order" value="small-to-big-view">
-                              От меньшего к большему
-                          </label>
-                      </li>
+                      <a href="#">От большего к меньшему</a>
+                      <a href="#">От меньшего к большему</a>
                   </ul>
               </fieldset>
           </section>
@@ -168,17 +143,15 @@
                               <a href="#">Sedona</a>
                           </h3>
                           <p>Информационный сайт для туристов</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-sedona.jpg" width="360" height="576" alt="Шаблон сайта Sedona">
+                          </div>
                       </div>
                   </li>
                   <li class="templates-item">
@@ -187,17 +160,15 @@
                               <a href="#">Pink App</a>
                           </h3>
                           <p>Продуктовый лендинг приложения для iOS и Android</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Pink App">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-pink.jpg" width="360" height="576" alt="Шаблон сайта Pink App">
+                          </div>
                       </div>
                   </li>
                   <li class="templates-item">
@@ -206,17 +177,15 @@
                               <a href="#">Barbershop</a>
                           </h3>
                           <p>Сайт салона красоты. Для мужчин, да.</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Шаблон сайта Barbershop">
+                          </div>
                       </div>
                   </li>
                   <li class="templates-item">
@@ -225,17 +194,15 @@
                               <a href="#">Mishka</a>
                           </h3>
                           <p>Интернет-магазин вязаных игрушек</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-mishka.jpg" width="360" height="576" alt="Шаблон сайта Mishka">
+                          </div>
                       </div>
                   </li>
                   <li class="templates-item">
@@ -244,17 +211,15 @@
                               <a href="#">A Plus</a>
                           </h3>
                           <p>Лендинг курсов повышения квалификации</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта A Plus">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-aplus.jpg" width="360" height="576" alt="Шаблон сайта A Plus">
+                          </div>
                       </div>
                   </li>
                   <li class="templates-item">
@@ -263,26 +228,24 @@
                               <a href="#">Кваст</a>
                           </h3>
                           <p>Промо-сайт производителя крафтового кваса</p>
-                          <button type="button" class="btn">9 900 Руб.</button>
+                          <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
-                      <div class="templates-indicator">
-                          <ul>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                              <li><span>o</span></li>
-                          </ul>
-                      </div>
-                      <div class="templates-image">
-                          <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
+                      <div class="template-wrapper">
+                          <div class="templates-indicator">
+                              <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
+                          </div>
+                          <div class="templates-image">
+                              <img src="img/img-kvast.jpg" width="360" height="576" alt="Шаблон сайта Кваст">
+                          </div>
                       </div>
                   </li>
               </ul>
               
               <ul class="pagination-list">
-                  <li class="pagination-item pagination-item-current">1</li>
-                  <li class="pagination-item"><a href="#">2</a></li>
-                  <li class="pagination-item"><a href="#">3</a></li>
-                  <li class="pagination-item pagination=item-next"><a href="#">Следующая</a></li>
+                  <li><a class="btn pagination-current-btn" href="#">1</a></li>
+                  <li><a class="btn pagination-btn" href="#">2</a></li>
+                  <li><a class="btn pagination-btn" href="#">3</a></li>
+                  <li><a class="btn pagination-btn pagination-next-btn" href="#">Следующая</a></li>
               </ul>
           </section>
       </main>
@@ -326,21 +289,21 @@
                   <label>
                       Ваше имя:
                       <span class="visually-hidden">например, Иван Петров</span>
-                      <input type="text" name="name" placeholder="Имя Фамилия" required>
+                      <input type="text" name="name" placeholder="Имя Фамилия">
                   </label>
               </p>
               <p class="modal-male">
                   <label>
                       Ваш e-mail:
                       <span class="visually-hidden">например, ivan.petrov@gmail.com</span>
-                      <input type="email" name="email" placeholder="email@example.com" required>
+                      <input type="email" name="email" placeholder="email@example.com">
                   </label>
               </p>
               <p class="modal-letter">
                   <label>
                       Текст письма
                       <span class="visually-hidden">в свободной форме</span>
-                      <textarea name="mail" placeholder="В свободной форме" required></textarea>
+                      <textarea name="mail" placeholder="В свободной форме"></textarea>
                   </label>
               </p>
               <button class="btn modal-btn" type="submit">Отправить</button>
