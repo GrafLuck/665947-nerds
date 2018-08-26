@@ -23,8 +23,9 @@
         </nav>
       </header>
       
-      <main class="container">
+      <main class="container container-catalog">
           <h1>Магазин готовых шаблонов</h1>
+          <div class="catalog-wrapper">
           <section class="filter">
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
               <!-- Форма фильтрации -->
@@ -112,8 +113,10 @@
               </form>  
           </section>
           
+              <div class="right-column-catalog">
           <section class="sort">
               <h2 class="visually-hidden">Типы и порядок сортировки</h2>
+              <div class="sort-wrapper">
               <b>Сортировать:</b>
               <!-- Форма сортировки -->
               <fieldset class="sort-view">
@@ -131,6 +134,7 @@
                       <a href="#">От меньшего к большему</a>
                   </ul>
               </fieldset>
+                  </div>
           </section>
           
           <section class="templates">
@@ -248,6 +252,8 @@
                   <li><a class="btn pagination-btn pagination-next-btn" href="#">Следующая</a></li>
               </ul>
           </section>
+                  </div>
+          </div>
       </main>
       
       <footer class="main-footer">
@@ -263,21 +269,23 @@
                   <div class="company-phone">
                       <a href="tel: +78122757575">тел. +7 (812) 275-75-75</a>
                   </div>
-                  <a class="btn mail-btn" href="#">Напишите нам</a>
+                  <button type="button" class="btn mail-btn" href="#">Напишите нам</button>
               </div>
           </section>
           <section class="footer-social">
               <h2 class="visually-hidden">Контакты в социальных сетях</h2>
-              <div class="social-btn">
-                  <ul class="social-btn-list">
-                      <li class="social-btn-item"><a href="https://vk.com">Вконтакте</a></li>
-                      <li class="social-btn-item"><a href="https://facebook.com">Фейсбук</a></li>
-                      <li class="social-btn-item"><a href="https://instagram.com">Инстаграм</a></li>
-                  </ul>
-              </div>
-              <div class="social-discount">
-                  <p><b>Давайте дружить, это выгодно!</b></p>
-                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              <div class="social-wrapper">
+                  <div class="social-btn">
+                      <ul class="social-btn-list">
+                          <li class="social-btn-item"><a href="https://vk.com">Вконтакте</a></li>
+                          <li class="social-btn-item"><a href="https://facebook.com">Фейсбук</a></li>
+                          <li class="social-btn-item"><a href="https://instagram.com">Инстаграм</a></li>
+                      </ul>
+                  </div>
+                  <div class="social-discount">
+                      <p><b>Давайте дружить, это выгодно!</b></p>
+                      <p>Скидка 10% для друзей из социальных сетей.</p>
+                  </div>
               </div>
           </section>
       </footer>
