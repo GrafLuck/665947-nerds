@@ -755,12 +755,31 @@ body {
     margin: 0;
     margin-left: 140px;
     padding: 0;
+    list-style: none;
 }
 
 .services-item { 
     width: 300px;
     margin-right: 100px;
     padding-top: 146px;
+}
+
+.services-item h3 {
+    margin-bottom: 17px;
+}
+
+.services-item p {
+    margin: 0;
+    padding: 0;
+    max-width: 260px;
+    margin-bottom: 45px;
+}
+
+.order-btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 /*Стилизация блока О нас*/
