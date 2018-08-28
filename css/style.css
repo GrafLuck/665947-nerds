@@ -230,6 +230,14 @@ a {
     list-style: none;
 }
 
+.right-column p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
 .about-us p:nth-of-type(4) {
     font-weight: 700;
     color: #000000;
@@ -247,6 +255,8 @@ a {
 }
 
 .principle th {
+    font-size: 16px;
+    font-weight: 400;
     color: #283136;
     line-height: 18px;
 }
@@ -604,14 +614,16 @@ body {
     margin-right: 47px;
 }
 
-.user-navigation a::before {
+.user-navigation::before {
     content: "";
     
     position: absolute;
     left: 0px;
     top: 7px;
     
-    background-image: url("/img/cart-icon.svg");
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
     width: 15px;
     height: 15px;
     
@@ -807,7 +819,7 @@ body {
 .left-column p:nth-child(2) {
     margin: 0;
     padding: 0;
-    max-width: 700px;
+    max-width: 650px;
     margin-bottom: 39px;
 }
 
@@ -856,6 +868,43 @@ body {
     border-bottom: 2px solid #fb565a;
     top: 81px;
     left: 0px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-top: -35px;
+}
+
+.right-column img {
+    width: 360px;
+    height: 208px;
+    margin-bottom: 35px;
+}
+
+.right-column p {
+    margin: 0;
+    padding: 0;
+    padding-right: 15px;
+    margin-bottom: 52px;
+}
+
+.principle {
+    border-collapse: collapse;
+    width: 360px;
+    text-align: left;
+}
+
+.principle td {
+    width: 110px;
+    padding: 0;
+    padding-bottom: 28px;
+}
+
+.principle sup {
+    font-size: 28px;
 }
 
 /*Стилизация блока клиенты*/
