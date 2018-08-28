@@ -825,7 +825,7 @@ body {
     padding-left: 36px;
 }
 
-.features-item:first-child::before {
+.features-item-1::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -836,14 +836,25 @@ body {
     left: 0px;
 }
 
-.features-item:last-child::before {
+.features-item-2::before {
     content: "";
     display: inline-block;
     position: absolute;
     width: 25px;
     height: 25px;
     border-bottom: 2px solid #fb565a;
-    top: -14px;
+    top: 34px;
+    left: 0px;
+}
+
+.features-item-3::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-bottom: 2px solid #fb565a;
+    top: 81px;
     left: 0px;
 }
 
