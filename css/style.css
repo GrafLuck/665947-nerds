@@ -910,25 +910,72 @@ body {
 /*Стилизация блока клиенты*/
 .clients {
     padding: 0;
-    margin: 0;
-    padding-left: 30px;
-    padding-right: 45px;
+    margin: 0 auto;
+    width: 1160px;
+    padding-bottom: 38px;
+
+    box-shadow: 
+        0 -2px #eeeeee,
+        0 2px #eeeeee; 
 }
 
 .clients-list {
+    position: relative;
     display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
 }
 
 .clients-item:nth-child(1) {
     margin-right: 96px;
+    margin-left: 31px;
+    padding-top: 62px;
 }
 
 .clients-item:nth-child(2) {
     margin-right: 103px;
+    padding-top: 46px;
 }
 
 .clients-item:nth-child(3) {
     margin-right: 121px;
+    padding-top: 65px;
+}
+
+.clients-item:nth-child(4) {
+    margin-right: 121px;
+    padding-top: 52px;
+}
+
+.clients-item:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+    top: 65px;
+    left: 280px;
+}
+
+.clients-item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+    top: 65px;
+    left: 580px;
+}
+
+.clients-item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 52px;
+    background-color: #eeeeee;
+    top: 65px;
+    left: 880px;
 }
 
 /*Стилизация футера*/
