@@ -985,29 +985,122 @@ body {
     width: inherit;
 }
 
+.footer-contacts {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 62px;
+}
+
 .company-contacts {
-    width: 270px;
-    background-color: #ffffff;
+    position: absolute;
+    top: 55px;
+    left: 140px;
+    box-sizing: border-box;
+    width: 320px;
+    min-height: 308px;
+    padding: 0;
+    margin: 0;
     padding-left: 50px;
+    padding-top: 49px;
+    background-color: #ffffff;
+}
+
+.company-name {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 23px;
+}
+
+.company-address {
+    padding: 0;
+    margin: 0;
+    padding-left: 2px;
+    margin-bottom: 15px;
+}
+
+.company-phone {
+    padding: 0;
+    margin: 0;
+    padding-left: 2px;
+    margin-bottom: 33px;
+}
+
+.mail-btn {
+    padding-left: 45px;
+    padding-right: 45px
 }
 
 .social-wrapper {
     display: flex;
     width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .social-btn {
-    width: 260px;
-    margin-right: 122px;
+    width: 340px;
+    margin-right: 60px;
+}
+
+.social-btn-list {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.social-btn-list li {
+    display: inherit;
+    width: 85px;
+}
+
+.social-btn-item {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 79px;
+    width: 79px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+}
+
+.social-btn-item:hover,
+.social-btn-item:focus {
+    background-color: #e74246;
+}
+
+.social-btn-item:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: rgba(215, 55, 59, 1);
+}
+
+.social-vk {
+    background-image: url("../img/vk-icon.png");
+}
+
+.social-fb {
+    background-image: url("../img/fb-icon.png");
+}
+
+.social-in {
+    background-image: url("../img/insta-icon.png");
 }
 
 .social-discount {
+    margin: 0;
+    padding: 0;
     width: 578px;
 }
+
+.social-discount p {
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+}
+
+
 
 /*СЕТКА СТРАНИЦЫ С КАТАЛОГОМ*/
 
