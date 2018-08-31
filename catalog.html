@@ -56,19 +56,22 @@
                       <ul class="grid-filter-list">
                           <li class="grid-filter-item">
                               <label>
-                                  <input type="radio" name="filter-grid" value="adaptive-grid" checked>
+                                  <input class="visually-hidden" type="radio" name="filter-grid" value="adaptive-grid" checked>
+                                  <span class="radio-indicator"></span>
                                   <span>Адаптивная</span>
                               </label>
                           </li>
                           <li class="grid-filter-item">
                               <label>
-                                  <input type="radio" name="filter-grid" value="fixed-grid">
+                                  <input class="visually-hidden" type="radio" name="filter-grid" value="fixed-grid">
+                                  <span class="radio-indicator"></span>
                                   <span>Фиксированная</span>
                               </label>
                           </li>
                           <li class="grid-filter-item">
                               <label>
-                                  <input type="radio" name="filter-grid" value="rubber-grid">
+                                  <input class="visually-hidden" type="radio" name="filter-grid" value="rubber-grid">
+                                  <span class="radio-indicator"></span>
                                   <span>Резиновая</span>
                               </label>
                           </li>
@@ -79,31 +82,36 @@
                       <ul class="features-filter-list">
                           <li class="features-filter-item">
                               <label>
-                                  <input type="checkbox" name="slider" checked>
+                                  <input class="visually-hidden" type="checkbox" name="slider" checked>
+                                  <span class="checkbox-indicator"></span>
                                   <span>Слайдер</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
-                                  <input type="checkbox" name="block-features">
+                                  <input class="visually-hidden" type="checkbox" name="block-features">
+                                  <span class="checkbox-indicator"></span>
                                   <span>Блок преимуществ</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
-                                  <input type="checkbox" name="news" checked>
+                                  <input class="visually-hidden" type="checkbox" name="news" checked>
+                                  <span class="checkbox-indicator"></span>
                                   <span>Новости</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
-                                  <input type="checkbox" name="gallery">
+                                  <input class="visually-hidden" type="checkbox" name="gallery">
+                                  <span class="checkbox-indicator"></span>
                                   <span>Галерея</span>
                               </label>
                           </li>
                           <li class="features-filter-item">
                               <label>
-                                  <input type="checkbox" name="basket">
+                                  <input class="visually-hidden" type="checkbox" name="basket">
+                                  <span class="checkbox-indicator"></span>
                                   <span>Корзина</span>
                               </label>
                           </li>
@@ -264,7 +272,7 @@
                   <div class="company-name">N&#235;rds design studio</div>
                   <div class="company-address">
                       191186, Санкт-Петербург, <br>
-                      ул. Б.Конюшенная, д. 19/8
+                      ул. Б. Конюшенная, д. 19/8
                   </div>
                   <div class="company-phone">
                       <a href="tel: +78122757575">тел. +7 (812) 275-75-75</a>
@@ -277,9 +285,21 @@
               <div class="social-wrapper">
                   <div class="social-btn">
                       <ul class="social-btn-list">
-                          <li class="social-btn-item"><a href="https://vk.com">Вконтакте</a></li>
-                          <li class="social-btn-item"><a href="https://facebook.com">Фейсбук</a></li>
-                          <li class="social-btn-item"><a href="https://instagram.com">Инстаграм</a></li>
+                          <li>
+                              <a class="social-btn-item social-vk" href="https://vk.com">
+                                  <span class="visually-hidden">Вконтакте</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-btn-item social-fb" href="https://facebook.com">
+                                  <span class="visually-hidden">Фейсбук</span>
+                              </a>
+                          </li>
+                          <li>
+                              <a class="social-btn-item social-in" href="https://instagram.com">
+                                  <span class="visually-hidden">Инстаграм</span>
+                              </a>
+                          </li>
                       </ul>
                   </div>
                   <div class="social-discount">

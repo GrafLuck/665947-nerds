@@ -1040,7 +1040,7 @@ body {
 
 .social-btn {
     width: 340px;
-    margin-right: 60px;
+    margin-right: 79px;
 }
 
 .social-btn-list {
@@ -1077,7 +1077,7 @@ body {
 }
 
 .social-vk {
-    background-image: url("../img/vk-icon.png");
+    background-image: url("/img/vk-icon.svg");
 }
 
 .social-fb {
@@ -1092,17 +1092,30 @@ body {
     margin: 0;
     padding: 0;
     width: 578px;
+    padding-top: 6px;
 }
 
 .social-discount p {
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
     vertical-align: center;
 }
 
 
-
 /*СЕТКА СТРАНИЦЫ С КАТАЛОГОМ*/
+
+.container-catalog h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align:center;
+    min-height: 163px;
+    background-color: #eeeeee;
+    padding-top: 79px;
+}
 
 .container-catalog {
     margin-bottom: 60px;
@@ -1112,6 +1125,9 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filter {
@@ -1141,6 +1157,112 @@ body {
     width: 60px;
     margin-left: 20px;
 }
+
+
+/*ФИЛЬТР ПО СЕТКЕ*/
+.grid-filter {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-filter legend {
+    margin-bottom: 21px;
+}
+
+.grid-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-filter-item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.grid-filter-item span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grid-filter-item input[type="radio"] + .radio-indicator {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border: 4px solid #a6a6a6;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.grid-filter-item input[type="radio"]:checked + .radio-indicator:before {
+    content: "";
+    position:absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background-color: #a6a6a6;
+    border-radius: 50%;
+}
+
+/*ФИЛЬТР ПО ОСОБЕННОСТЯМ*/
+
+.features-filter {
+    margin: 0;
+    padding: 0;
+}
+
+.features-filter legend {
+    margin-bottom: 21px;
+}
+
+.features-filter-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features-filter-item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.features-filter-item span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.features-filter-item input[type="checkbox"] + .checkbox-indicator {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border: 2px solid #a6a6a6;
+    border-radius: 15%;
+    margin-right: 10px;
+}
+
+.features-filter-item input[type="checkbox"] + .checkbox-indicator {
+    display: inline-block;
+    height: 23px;
+    width: 27px;
+    background-image: url("/img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    opacity: 0.4; 
+}
+
+.features-filter-item input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url("/img/checkbox-on.svg");
+}
+
+
+
 
 .templates-list {
     display: flex;
