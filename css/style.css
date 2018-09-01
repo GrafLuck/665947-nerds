@@ -13,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 .main-header {
@@ -178,6 +179,7 @@ a {
 .order-btn-web:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #d7373b;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .order-btn-app {
@@ -193,6 +195,7 @@ a {
 .order-btn-app:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #00aa62;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .order-btn-prs {
@@ -208,6 +211,7 @@ a {
 .order-btn-prs:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #e5a722;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .about-us b {
@@ -300,6 +304,7 @@ a {
 .mail-btn {
     color: #ffffff;
     background-color: #fb565a;
+    outline: none;
 } 
 
 .mail-btn:hover,
@@ -310,6 +315,7 @@ a {
 .mail-btn:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #d7373b;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .social-btn-list {
@@ -421,7 +427,7 @@ a {
 /*Стилизация фильтра сетки и фильтра особенностей*/
 .grid-filter-item label,
 .features-filter-item label {
-    color: rgba(40, 49, 54, 0.5);
+    color: rgba(40, 49, 54, 1);
     line-height: 20px;
 }
 
@@ -429,11 +435,11 @@ a {
 .features-filter-item label:hover,
 .grid-filter-item label:focus,
 .features-filter-item label:focus {
-    color: rgba(40, 49, 54, 1);
+    color: rgba(0, 0, 0, 1);
 }
 
-.grid-filter-item input[disabled] + span,
-.features-filter-item input[disabled] + span {
+.grid-filter-item input[disabled] ~ span,
+.features-filter-item input[disabled] ~ span {
     color: rgba(40, 49, 54, 0.3);
 }
 
@@ -446,17 +452,19 @@ a {
 .filter-btn:hover,
 .filter-btn:focus {
     background-color: #dfdfdf;
+    outline: none;
 }
 
 .filter-btn:active {
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 /*Стилизация кнопок сортировки*/
 .sort-view a,
 .sort-order a {
-    color: rgba(0, 0, 0, 0.3);
+    color: #000000;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
@@ -509,8 +517,12 @@ a {
     opacity: 0.1;
 }
 
-.template-wrapper:hover .templates-indicator {
+.templates-item:hover .templates-indicator {
     opacity: 1;
+}
+
+.templates-item: hover .templates-price {
+    display: block;
 }
 
 /*Кнопка покупки шаблона*/
@@ -538,14 +550,15 @@ a {
     background-color: #eeeeee;
 }
 
-.pagination-btn:hover,
-.pagination-btn:focus {
+.pagination-btn:not(.pagination-current-btn):hover,
+.pagination-btn:not(.pagination-current-btn):focus {
     background-color: #dfdfdf;
 }
 
-.pagination-btn:active {
+.pagination-btn:not(.pagination-current-btn):active {
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-current-btn {  
@@ -1077,7 +1090,7 @@ body {
 }
 
 .social-vk {
-    background-image: url("/img/vk-icon.svg");
+    background-image: url("../img/vk-icon.svg");
 }
 
 .social-fb {
@@ -1115,6 +1128,7 @@ body {
     min-height: 163px;
     background-color: #eeeeee;
     padding-top: 79px;
+    margin-bottom: 57px;
 }
 
 .container-catalog {
@@ -1125,7 +1139,7 @@ body {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1200px;
+    width: 1160px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1145,28 +1159,126 @@ body {
 .sort-wrapper {
     display: flex;
     width: 760px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-shrink: 0;
+/*    margin-top: -2px;*/
 }
 
 .sort-view {
+    margin: 0;
+    padding: 0;
     width: 280px;
-    margin-left: auto;
 }
 
 .sort-order {
+    position: relative;
+    margin:0;
+    padding: 0;
     width: 60px;
-    margin-left: 20px;
 }
+
+/*СТИЛИЗАЦИЯ ФИЛЬТРА ПО ЦЕНЕ*/
+
+.price-filter {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 57px;
+}
+
+.price-filter legend {
+    margin-bottom: 51px;
+}
+
+.two-handle-range {
+    position: relative;
+    width: 221px;
+    height: 41px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 14px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.two-handle-range .scale {
+    height: 2px;
+    background-color: #d7dcde;
+}
+
+.two-handle-range .bar {
+    width: 80%;
+    height: 2px;
+    
+    background: #00ca74;
+}
+
+.two-handle-range .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.two-handle-range .toggle-min {
+    left: 18px;
+}
+
+.two-handle-range .toggle-max {
+    left: 160px;
+}
+
+.price-controls {
+    font-size: 0;
+}
+
+.price-controls label {
+    display: inline-block;
+    width: 50%;
+    
+    font-size: 16px;
+}
+
+.price-controls input {
+    box-sizing: border-box;
+    width: 80px;
+    height: 38px;
+    padding: 8px 10px;
+    margin-left: 8px;
+    
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+    
+    border: none;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+.price-to {
+  text-align: right;
+}
+
 
 
 /*ФИЛЬТР ПО СЕТКЕ*/
 .grid-filter {
     margin: 0;
     padding: 0;
+    margin-bottom: 32px;
 }
 
 .grid-filter legend {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
 }
 
 .grid-filter-list {
@@ -1192,9 +1304,9 @@ body {
     display: inline-block;
     height: 25px;
     width: 25px;
-    border: 4px solid #a6a6a6;
+    border: 4px solid rgba(77, 77, 77, 0.4);
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 .grid-filter-item input[type="radio"]:checked + .radio-indicator:before {
@@ -1204,8 +1316,27 @@ body {
     left: 8px;
     width: 9px;
     height: 9px;
-    background-color: #a6a6a6;
+    background-color: rgba(77, 77, 77, 0.4);
     border-radius: 50%;
+}
+
+.grid-filter-item input[type="radio"]:hover + .radio-indicator,
+.grid-filter-item input[type="radio"]:focus + .radio-indicator
+{
+    border-color: rgba(77, 77, 77, 1);
+}
+
+.grid-filter-item input[type="radio"]:checked:hover + .radio-indicator:before,
+.grid-filter-item input[type="radio"]:checked:focus + .radio-indicator:before {
+    background-color: rgba(77, 77, 77, 1);
+}
+
+.grid-filter-item input[type="radio"]:disabled + .radio-indicator {
+    border-color: rgba(77, 77, 77, 0.1);
+}
+
+.grid-filter-item input[type="radio"]:checked:disabled + .radio-indicator:before {
+    background-color: rgba(77, 77, 77, 0.1);
 }
 
 /*ФИЛЬТР ПО ОСОБЕННОСТЯМ*/
@@ -1213,10 +1344,11 @@ body {
 .features-filter {
     margin: 0;
     padding: 0;
+    margin-bottom: 32px;
 }
 
 .features-filter legend {
-    margin-bottom: 21px;
+    margin-bottom: 16px;
 }
 
 .features-filter-list {
@@ -1229,7 +1361,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
 }
 
 .features-filter-item span {
@@ -1237,6 +1369,7 @@ body {
     vertical-align: middle;
 }
 
+/*
 .features-filter-item input[type="checkbox"] + .checkbox-indicator {
     box-sizing: border-box;
     display: inline-block;
@@ -1246,11 +1379,13 @@ body {
     border-radius: 15%;
     margin-right: 10px;
 }
+*/
 
 .features-filter-item input[type="checkbox"] + .checkbox-indicator {
     display: inline-block;
     height: 23px;
     width: 27px;
+    margin-right: 5px;
     background-image: url("/img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: left center;
@@ -1261,22 +1396,198 @@ body {
     background-image: url("/img/checkbox-on.svg");
 }
 
+.features-filter-item input[type="checkbox"]:hover + .checkbox-indicator,
+.features-filter-item input[type="checkbox"]:focus + .checkbox-indicator {
+    opacity: 1;
+}
+
+.features-filter-item input[type="checkbox"]:disabled + .checkbox-indicator {
+    opacity: 0.1;
+}
 
 
+/*СТИЛИЗАЦИЯ КНОПКИ ФОРМЫ "ПОКАЗАТЬ"*/
 
+.filter-btn {
+    padding: 16px 89px;
+}
+
+
+/*СТИЛИЗАЦИЯ ПОЛЕЙ СОРТИРОВКИ*/
+
+.sort {
+    margin-bottom: 51px;
+}
+
+.sort-view ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sort-wrapper b {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.sort-view a {
+    margin-right: 22px;
+    opacity: 0.3;
+}
+
+.sort-view a:last-of-type {
+    margin-right: 0px;
+}
+
+.sort-view a:hover,
+.sort-view a:focus {
+    opacity: 0.6;
+}
+
+.sort-view a:active {
+    opacity: 1;
+}
+
+.sort-view .sort-view-active {
+    color: #000000;
+    opacity: 1;
+}
+
+.sort-to-down {
+    position: absolute;
+    top: 7px;
+    left: 40px;
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #a6a6a6;
+    opacity: 0.2;
+}
+
+.sort-to-up {
+    position: absolute;
+    top: 7px;
+    left: 69px;
+    display: inline-block;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-bottom: 10px solid #a6a6a6;
+    opacity: 0.2;
+}
+
+.sort-to-down:hover,
+.sort-to-down:focus,
+.sort-to-up:hover,
+.sort-to-up:focus {
+    opacity: 1;
+}
+
+.sort-to-down:active {
+    border-top-color: #000000;
+}
+
+.sort-to-up:active {
+    border-bottom-color: #000000;
+}
+
+.sort-order-active {
+    border-color: #000000;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    opacity: 1;
+}
+
+
+/*СТИЗИЛАЦИЯ ШАБЛОНОВ*/
 .templates-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    
     padding: 0;
-    margin: 0 0 25px 0; 
+    margin: 0 0 26px 0; 
 }
 
 .templates-item {
+    position: relative;
     width: 360px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
+
+.templates-price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: inherit;
+    background-color: #eeeeee;
+    padding-top: 26px;
+    text-align: center;
+    z-index: 100;
+}
+
+.templates-price h3 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.templates-price p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-templates {
+    padding: 15px 60px;
+    margin-bottom: 45px;
+}
+
+.templates-indicator {
+    height: 40px;
+}
+
+.templates-image {
+    height: 576px;
+    width: 360px;
+    
+}
+
+.templates-image::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    height: 576px;
+    width: 360px;
+    background-color: (0, 0, 0, 0);
+    border: 1px solid rgba(0, 1, 1, 0.1);
+    z-index: 2;
+}
+
+.templates-item:hover .templates-indicator {
+    opacity: 1;
+}
+
+.templates-item:hover .templates-price {
+    display: block;
+}
+
+.templates-item:hover .template-wrapper {
+    box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+}
+
+/*СТИЛИЗАЦИЯ КНОПОК ПАГИНАЦИИ*/
 
 .pagination-list {
     padding: 0;
@@ -1287,8 +1598,36 @@ body {
 }
 
 .pagination-list li {
-    width: 50px;
+    margin: 0px;
+    padding: 0px;
 }
+
+.pagination-list .pagination-btn {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 15px;   
+    height: 50px;
+    margin-right: 10px;
+}
+
+.pagination-list .pagination-current-btn {
+    border: 3px solid #dbdbdb;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px; 
+}
+
+.pagination-list .pagination-next-btn {
+    padding-left: 79px;
+    padding-right: 79px;
+}
+
+
+
 
 .visually-hidden {
   position: absolute;

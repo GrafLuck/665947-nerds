@@ -32,22 +32,21 @@
               <form action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="price-filter">
                       <legend>Стоимость:</legend>
-                      <label>
-                          <span class="visually-hidden">Нижняя граница диапазона выбора стоимости</span>
-                          <input class="price-range-min" type="range" name="price_range_min" min="0" max="20000" value="0" oninput="price_text_min.value=this.value">
-                      </label>
-                      <label>
-                          <span class="visually-hidden">Верхняя граница диапазона выбора стоимости</span>
-                          <input class="price-range-max" type="range" name="price_range_max" min="0" max="20000" value="15000" oninput="price_text_max.value=this.value">
-                      </label>
-		              <p>
+                      <div class="two-handle-range">
+                          <div class="scale">
+                              <div class="bar" style="margin-left: 0%; width: 70%"></div>
+                          </div>
+                          <div class="toggle toggle-min"></div>
+                          <div class="toggle toggle-max"></div>
+                      </div>
+		              <p class="price-controls">
                           <label class="price-from">
                               От
-                              <input class="price-text-min" type="number" name="price_text_min" min="0" max="20000" value="0" oninput="this.form.price_range_min.value=this.value">
+                              <input class="price-text-min" type="text" name="price-text-min" min="0" max="20000" value="0">
                           </label>
                           <label class="price-to">
                               До
-                              <input class="price-text-max" type="number" name="price_text_max" min="0" max="20000" value="15000" oninput="price_range_max.value=this.value">
+                              <input class="price-text-max" type="text" name="price-text-max" min="0" max="20000" value="15000">
                           </label>
                       </p>
                   </fieldset>
@@ -56,7 +55,7 @@
                       <ul class="grid-filter-list">
                           <li class="grid-filter-item">
                               <label>
-                                  <input class="visually-hidden" type="radio" name="filter-grid" value="adaptive-grid" checked>
+                                  <input class="visually-hidden" type="radio" name="filter-grid" value="adaptive-grid" checked disabled>
                                   <span class="radio-indicator"></span>
                                   <span>Адаптивная</span>
                               </label>
@@ -122,28 +121,28 @@
           </section>
           
               <div class="right-column-catalog">
-          <section class="sort">
-              <h2 class="visually-hidden">Типы и порядок сортировки</h2>
-              <div class="sort-wrapper">
-              <b>Сортировать:</b>
-              <!-- Форма сортировки -->
-              <fieldset class="sort-view">
-                  <legend><span class="visual-hidden">Выбор вида сортировки шаблонов макетов</span></legend>
-                  <ul>
-                      <a class="sort-by-price" href="#">По цене</a>
-                      <a class="sort-by-type" href="#">По типу</a>
-                      <a class="sort-by-name" href="#">По названию</a>
-                  </ul>
-              </fieldset>
-              <fieldset class="sort-order">
-                  <legend><span class="visually-hidden">Выбор порядка сортировки шаблонов макетов</span></legend>
-                  <ul>
-                      <a href="#">От большего к меньшему</a>
-                      <a href="#">От меньшего к большему</a>
-                  </ul>
-              </fieldset>
-                  </div>
-          </section>
+                  <section class="sort">
+                      <h2 class="visually-hidden">Типы и порядок сортировки</h2>
+                      <div class="sort-wrapper">
+                          <b>Сортировать:</b>
+                          <!-- Форма сортировки -->
+                          <fieldset class="sort-view">
+                              <legend><span class="visually-hidden">Выбор вида сортировки шаблонов макетов</span></legend>
+                              <ul>
+                                  <a class="sort-view-active" href="#">По цене</a>
+                                  <a class="" href="#">По типу</a>
+                                  <a class="" href="#">По названию</a>
+                              </ul>
+                          </fieldset>
+                          <fieldset class="sort-order">
+                              <legend><span class="visually-hidden">Выбор порядка сортировки шаблонов макетов</span></legend>
+                              <ul>
+                                  <a class="sort-to-down sort-order-active" href="#"><span class="visually-hidden">От большего к меньшему</span></a>
+                                  <a class="sort-to-up " href="#"><span class="visually-hidden">От меньшего к большему</span></a>
+                              </ul>
+                          </fieldset>
+                      </div>
+                  </section>
           
           <section class="templates">
               <h2 class="visually-hidden">Список шаблонов</h2>
@@ -154,9 +153,10 @@
                           <h3>
                               <a href="#">Sedona</a>
                           </h3>
-                          <p>Информационный сайт для туристов</p>
+                          <p>Информационный сайт<br> для туристов</p>
                           <button class="btn btn-templates" type="button" class="btn">9 900 Руб.</button>
                       </div>
+                      
                       <div class="template-wrapper">
                           <div class="templates-indicator">
                               <img src="img/browser.svg" width="360" height="40" alt="Переключатель страниц шаблона сайта">
@@ -254,7 +254,7 @@
               </ul>
               
               <ul class="pagination-list">
-                  <li><a class="btn pagination-current-btn" href="#">1</a></li>
+                  <li><a class="btn pagination-btn pagination-current-btn">1</a></li>
                   <li><a class="btn pagination-btn" href="#">2</a></li>
                   <li><a class="btn pagination-btn" href="#">3</a></li>
                   <li><a class="btn pagination-btn pagination-next-btn" href="#">Следующая</a></li>
