@@ -1429,14 +1429,14 @@ body {
     height: 23px;
     width: 27px;
     margin-right: 5px;
-    background-image: url("/img/checkbox-off.svg");
+    background-image: url("../img/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: left center;
     opacity: 0.4; 
 }
 
 .features-filter-item input[type="checkbox"]:checked + .checkbox-indicator {
-    background-image: url("/img/checkbox-on.svg");
+    background-image: url("../img/checkbox-on.svg");
 }
 
 .features-filter-item input[type="checkbox"]:hover + .checkbox-indicator,
