@@ -1669,8 +1669,94 @@ body {
     padding-right: 79px;
 }
 
+/*Модальное окно*/
+.modal {
+    position: fixed;
+    bottom: 180px;
+    left: 50%;
+    margin: 0;
+    margin-left: -480px;
+    padding: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    padding-bottom: 84px;
+    width: 760px;
+    height: 436px;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
+}
 
+.modal h2 {
+    margin: 0;
+    margin-bottom: 49px;
+}
 
+.modal-name {
+    display: inline-block;
+    margin: 0;
+    margin-right: 36px;
+    margin-bottom: 35px;
+}
+
+.modal-male {
+    display: inline-block;
+    margin: 0;
+}
+
+.modal-letter {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 47px;
+}
+
+.modal-name-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-name input {
+    box-sizing: border-box;
+    width: 360px;
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid #d7dcde;
+}
+
+.modal-male-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-male input {
+    box-sizing: border-box;
+    width: 360px;
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid #d7dcde;
+}
+
+.modal-letter-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-letter textarea {
+    box-sizing: border-box;
+    width: 760px;
+    height: 118px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border: 2px solid #d7dcde;
+}
+
+.modal-btn {
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
 
 .visually-hidden {
   position: absolute;
