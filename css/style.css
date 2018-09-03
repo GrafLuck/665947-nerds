@@ -586,6 +586,7 @@ body {
 .main-header {
     margin: 0;  
     padding: 0;
+/*    width: 100%;*/
 }
 
 .header-wrapper {
@@ -688,6 +689,7 @@ body {
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    background-color: #eeeeee;
 }
 
 .slider-list {
@@ -1048,16 +1050,22 @@ body {
 .main-footer {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
 }
 
 .footer-contacts {
     position: relative;
-    width: 1440px;
+    width: 100%;
     padding: 0;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 62px;
+}
+
+.footer-contacts img {
+    width: 100%;
+    min-width: 1200px;
+    height: 416px;
 }
 
 .footer-social {
@@ -1073,7 +1081,8 @@ body {
 .company-contacts {
     position: absolute;
     top: 55px;
-    left: 140px;
+/*    left: 140px;*/
+    left: 20px;
     box-sizing: border-box;
     width: 320px;
     min-height: 308px;
