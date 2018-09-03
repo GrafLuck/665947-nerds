@@ -1,3 +1,7 @@
+html {
+    width: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -85,6 +89,7 @@ a {
 .slider-item {
     background-repeat: no-repeat;
     background-position: 431px 18px;
+    background-color: #eeeeee;
 }
 
 .slider-item:nth-child(1) {
@@ -574,6 +579,7 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 69px;
+    width: 100%;
 }
 
 /*Стилизация шапки*/
@@ -594,6 +600,7 @@ body {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #eeeeee;
 }
 
 .main-header-logo {
@@ -686,12 +693,14 @@ body {
 .slider-list {
     margin: 0;
     padding: 0;
-    padding-right: 30px;
+    width: 1160px;
+    background-color: #eeeeee;
+/*    padding-right: 30px;*/
 }
 
 .slider-item {
     display:none;
-    width: 1170px;
+    width: 1160px;
     margin: 0;
     padding: 0;
     padding-top: 78px;
@@ -1231,6 +1240,7 @@ body {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #eeeeee;
 }
 
 .container-catalog {
