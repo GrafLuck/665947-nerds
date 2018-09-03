@@ -9,10 +9,11 @@
   </head>
   <body>
       <header class="main-header">
-        <a class="main-header-logo active-logo-link" href="index.html">
+          <div class="header-wrapper">
+              <a class="main-header-logo active-logo-link" href="index.html">
             <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerd's">
         </a>
-        <nav class="main-navigation">
+              <nav class="main-navigation">
             <ul class="site-navigation">
                 <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
@@ -21,12 +22,14 @@
             </ul>
             <p class="user-navigation"><a href="#">Корзина</a></p>
         </nav>
-      </header>
-      
+          </div>
+      </header>     
       <main class="container container-catalog">
-          <h1>Магазин готовых шаблонов</h1>
+          <div class="header-container">
+              <h1>Магазин готовых шаблонов</h1>
+          </div>
           <div class="catalog-wrapper">
-          <section class="filter">
+              <section class="filter">
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
               <!-- Форма фильтрации -->
               <form action="https://echo.htmlacademy.ru" method="get">
@@ -119,7 +122,6 @@
                   <button class="btn filter-btn" type="submit">Показать</button> 
               </form>  
           </section>
-          
               <div class="right-column-catalog">
                   <section class="sort">
                       <h2 class="visually-hidden">Типы и порядок сортировки</h2>
@@ -143,8 +145,7 @@
                           </fieldset>
                       </div>
                   </section>
-          
-          <section class="templates">
+                  <section class="templates">
               <h2 class="visually-hidden">Список шаблонов</h2>
               <ul class="templates-list">
                   <li class="templates-item">
@@ -260,7 +261,7 @@
                   <li><a class="btn pagination-btn pagination-next-btn" href="#">Следующая</a></li>
               </ul>
           </section>
-                  </div>
+              </div>
           </div>
       </main>
       
