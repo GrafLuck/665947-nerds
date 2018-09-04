@@ -1062,6 +1062,18 @@ body {
     margin-bottom: 62px;
 }
 
+.contacts-wrapper {
+    position: relative;
+    width: 1160px;
+    height: 416px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -422px;
+    z-index: 30;
+}
+
 .footer-contacts img {
     width: 100%;
     min-width: 1200px;
