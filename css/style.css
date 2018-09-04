@@ -1246,24 +1246,6 @@ body {
 
 
 /*СЕТКА СТРАНИЦЫ С КАТАЛОГОМ*/
-
-.container-catalog h1 {
-    padding: 0;
-    margin: 0;
-    width: 1160px;
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 55px;
-    text-align:center;
-    min-height: 163px;
-    padding-top: 79px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #eeeeee;
-}
-
 .container-catalog {
     margin-bottom: 60px;
 }
@@ -1271,21 +1253,50 @@ body {
 .header-container {
     background-color: #eeeeee;
     margin-bottom: 57px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.catalog-wrapper {
-    display:flex;
+.container-catalog h1 {
+    padding: 0;
+    margin: 0;
     width: 1160px;
-    flex-direction: row;
-    justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align:center;
+    min-height: 163px;
+    padding-top: 79px;
+    background-color: #eeeeee;
 }
 
+.catalog-wrapper {
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+/*
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+*/
+}
+
+.wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+
+
 .filter {
-    width: 260px;
+/*    width: 260px;*/
 }
 
 .right-column-catalog {
@@ -1298,23 +1309,21 @@ body {
 
 .sort-wrapper {
     display: flex;
-    width: 760px;
+    width: 100%;
     justify-content: flex-start;
-    flex-shrink: 0;
+/*    flex-shrink: 0;*/
 /*    margin-top: -2px;*/
 }
 
 .sort-view {
     margin: 0;
     padding: 0;
-    width: 280px;
 }
 
 .sort-order {
     position: relative;
     margin:0;
     padding: 0;
-    width: 60px;
 }
 
 /*СТИЛИЗАЦИЯ ФИЛЬТРА ПО ЦЕНЕ*/
@@ -1569,14 +1578,23 @@ body {
     margin-right: 100px;
 }
 
+.sort-view ul {
+    list-style: none;
+    margin: 0;
+}
+.sort-view li {
+/*    display: inline-block;*/
+}
+
+.sort-view li:last-of-type {
+/*    margin-right: 7px;*/
+}
+
 .sort-view a {
-    margin-right: 22px;
     opacity: 0.3;
 }
 
-.sort-view a:last-of-type {
-    margin-right: 0px;
-}
+
 
 .sort-view a:hover,
 .sort-view a:focus {
@@ -1631,6 +1649,11 @@ body {
 
 .sort-to-up:active {
     border-bottom-color: #000000;
+}
+
+.sort-order ul {
+    list-style: none;
+    margin: 0;
 }
 
 .sort-order-active {
