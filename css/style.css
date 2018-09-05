@@ -272,19 +272,25 @@ a
 
 .slider-item:nth-child(1)
 {
-    display: block;
+/*    display: block;*/
 
     background-image: url(../img/slider1.png);
 }
 
 .slider-item:nth-child(2)
 {
+/*    display: block;*/
+    
     background-image: url(../img/slider2.png);
+    background-position: 497px 1px;
 }
 
 .slider-item:nth-child(3)
 {
+    display: block;
+    
     background-image: url(../img/slider3.png);
+    background-position: 401px 20px;
 }
 
 .slider-item p:nth-child(1)
