@@ -948,7 +948,7 @@ a
 
     width: 100%;
     margin: 0;
-    margin-bottom: 62px;
+    margin-bottom: 67px;
     padding: 0;
 }
 
@@ -2084,8 +2084,8 @@ a
     top: 20%;
     left: 50%;
 
-/*    display: none;*/
-    display: block;
+    display: none;
+/*    display: block;*/
 
     box-sizing: border-box;
     width: 960px;
