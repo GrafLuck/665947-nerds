@@ -2084,7 +2084,8 @@ a
     top: 20%;
     left: 50%;
 
-    display: none;
+/*    display: none;*/
+    display: block;
 
     box-sizing: border-box;
     width: 960px;
@@ -2176,7 +2177,7 @@ a
     margin-right: 36px;
     margin-bottom: 35px;
     
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .modal-male
@@ -2185,7 +2186,7 @@ a
 
     margin: 0;
     
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .modal-letter
@@ -2195,7 +2196,7 @@ a
     margin: 0;
     margin-bottom: 40px;
     
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .modal-name-label
