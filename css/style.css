@@ -186,20 +186,35 @@ a
 }
 
 /*Правило, позволяющее убрать выделение на текущей позиции меню при наведении и нажатии. Также добавляет нижнее подчеркивание, если находимся на странице, на которую ведет данный пункт меню */
-.site-navigation .site-navigation-current,
-.site-navigation .site-navigation-current:hover,
-.site-navigation .site-navigation-current:focus,
-.site-navigation .site-navigation-current:active,
-.user-navigation .user-navigation-current,
-.user-navigation .user-navigation-current:hover,
-.user-navigation .user-navigation-current:focus,
-.user-navigation .user-navigation-current:active
+/*Применяется к ссылке*/
+.main-navigation .site-navigation-current,
+.main-navigation .site-navigation-current:hover,
+.main-navigation .site-navigation-current:focus,
+.main-navigation .site-navigation-current:active
 {
-    padding-bottom: 5px; /* Пока отступ сделан на глаз*/
+    padding-bottom: 9px;  
 
     opacity: 1;
     color: #000;
     border-bottom: 2px solid #fb565a;
+}
+
+/*Применяется к абзацу, а не к ссылке*/
+.main-navigation .user-navigation-current::after,
+.main-navigation .user-navigation-current:hover::after,
+.main-navigation .user-navigation-current:focus::after,
+.main-navigation .user-navigation-current:active::after
+{
+    position: absolute;
+    top: 33px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: '';
+
+    background-color: #fb565a;
 }
 
 /*************************************************************/
@@ -1621,8 +1636,6 @@ a
     display: flex;
     flex-direction: row;
 
-    padding-top: 55px;
-
     justify-content: space-between;
 }
 
@@ -2038,10 +2051,11 @@ a
 {
     position: fixed;
     z-index: 1000;
-    bottom: 180px;
+/*    bottom: 180px;*/
+    top: 20%;
     left: 50%;
 
-    display: block;
+    display: none;
 
     box-sizing: border-box;
     width: 960px;
