@@ -2041,14 +2041,15 @@ a
     bottom: 180px;
     left: 50%;
 
-    display: none;
+    display: block;
 
-    width: 760px;
-    height: 436px;
+    box-sizing: border-box;
+    width: 960px;
+    height: 590px;
     margin: 0;
     margin-left: -480px;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 67px;
     padding-right: 100px;
     padding-bottom: 84px;
     padding-left: 100px;
@@ -2064,7 +2065,7 @@ a
     line-height: 45px;
 
     margin: 0;
-    margin-bottom: 49px;
+    margin-bottom: 40px;
 
     color: #000;
 }
@@ -2076,6 +2077,7 @@ a
 
     color: rgba(68, 68, 68, .5);
     border: 2px solid #d7dcde;
+    border-radius: 3px;
     outline: none;
     background-color: #fff;
 }
@@ -2098,6 +2100,21 @@ a
 {
     color: rgba(231, 66, 70, 1);
     border-color: #e74246;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder
+{
+    line-height: 18px;
+
+    opacity: .5;
+    color: #444;
+}
+
+.modal input:focus::placeholder,
+.modal textarea:focus::placeholder
+{
+    opacity: 1;
 }
 
 .modal label
@@ -2129,14 +2146,14 @@ a
     display: inline-block;
 
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 40px;
 }
 
 .modal-name-label
 {
     display: block;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .modal-name input
@@ -2144,7 +2161,7 @@ a
     box-sizing: border-box;
     width: 360px;
     height: 50px;
-    padding-left: 15px;
+    padding-left: 13px;
 
     border: 2px solid #d7dcde;
 }
@@ -2153,7 +2170,7 @@ a
 {
     display: block;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .modal-male input
@@ -2161,7 +2178,7 @@ a
     box-sizing: border-box;
     width: 360px;
     height: 50px;
-    padding-left: 15px;
+    padding-left: 13px;
 
     border: 2px solid #d7dcde;
 }
@@ -2170,7 +2187,7 @@ a
 {
     display: block;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .modal-letter textarea
@@ -2179,17 +2196,17 @@ a
     width: 760px;
     height: 118px;
     padding-top: 10px;
-    padding-left: 15px;
+    padding-left: 13px;
 
     border: 2px solid #d7dcde;
 }
 
 .modal-btn
 {
-    padding-top: 18px;
-    padding-right: 82px;
-    padding-bottom: 18px;
-    padding-left: 82px;
+    padding-top: 16px;
+    padding-right: 84px;
+    padding-bottom: 16px;
+    padding-left: 84px;
 
     color: #fff;
     background-color: #fb565a;
@@ -2205,4 +2222,38 @@ a
 {
     color: rgba(255, 255, 255, .3);
     background-color: #d7373b;
+}
+
+
+.modal-close
+{
+    font-size: 0;
+
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 21px;
+    height: 21px;
+
+    cursor: pointer;
+
+    opacity: .3;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    background-image: url(../img/close-cross.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.modal-close:hover,
+.modal-close:focus
+{
+    opacity: 1;
+}
+
+.modal-close:active
+{
+    opacity: .1;
 }
