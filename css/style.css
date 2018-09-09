@@ -946,8 +946,9 @@ a
 {
     position: relative;
 
-    width: 100%;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 67px;
     padding: 0;
 }
@@ -969,7 +970,6 @@ a
 .footer-contacts img
 {
     width: 100%;
-    min-width: 1200px;
     height: 416px;
 }
 
@@ -2094,8 +2094,8 @@ a
     top: 20%;
     left: 50%;
 
-    display: none;
-/*    display: block;*/
+/*    display: none;*/
+    display: block;
 
     box-sizing: border-box;
     width: 960px;
