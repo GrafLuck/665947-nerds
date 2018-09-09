@@ -1383,12 +1383,15 @@ a
 .price-to
 {
     text-transform: uppercase;
+    
+    line-height: 22px;
 }
 
 .price-text-min,
 .price-text-max
 {
     text-align: center;
+    line-height: 22px;
 
     border: none;
     background-color: #eee;
@@ -1409,6 +1412,8 @@ a
 .grid-filter legend
 {
     margin-bottom: 16px;
+    
+    line-height: 30px;
 }
 
 .grid-filter-list
@@ -1694,12 +1699,13 @@ a
 {
     font-size: 18px;
     font-weight: 700;
+    line-height: 18px;
+    color: #000000;
 
     display: inline-block;
 
     margin-right: 265px;
 
-    text-align: 18px;
     text-transform: uppercase;
     vertical-align: middle;
 }
@@ -1901,6 +1907,9 @@ a
     padding: 0;
 
     text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
 }
 
 .templates-price p
