@@ -1310,8 +1310,9 @@ a
 
 .two-handle-range .bar
 {
-    width: 80%;
+    width: 70%;
     height: 2px;
+    margin-left: 0%;
 
     background: #00ca74;
 }
