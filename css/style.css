@@ -2097,8 +2097,8 @@ a
     top: 20%;
     left: 50%;
 
-    display: none;
-/*    display: block;*/
+/*    display: none;*/
+    display: block;
 
     box-sizing: border-box;
     width: 960px;
@@ -2290,8 +2290,8 @@ a
     font-size: 0;
 
     position: absolute;
-    top: 0;
-    right: -34px;
+    top: 78px;
+    right: 90px;
 
     width: 21px;
     height: 21px;
