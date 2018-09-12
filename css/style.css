@@ -936,6 +936,7 @@ a
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     width: 100%;
 }
@@ -951,6 +952,10 @@ a
     margin-right: auto;
     margin-bottom: 67px;
     padding: 0;
+    
+    max-width: 1440px;
+    max-height: 416px;
+    height: auto;
 }
 
 .contacts-wrapper
@@ -970,7 +975,14 @@ a
 .footer-contacts img
 {
     width: 100%;
+    min-width: 1200px;
     height: 416px;
+    
+    object-fit: contain;
+}
+
+img[data-object-fit="contain"] {
+	object-fit: contain;
 }
 
 .company-contacts

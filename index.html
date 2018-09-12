@@ -156,7 +156,7 @@
         <footer class="main-footer">
             <section class="footer-contacts">
                 <h2 class="visually-hidden">Контакты</h2>
-                <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's: Санкт-Петербург, улица Большая Конюшенная дом 19/8">
+                <img src="img/map-marker.png" width="1440" height="416" alt="Адрес дизайн-студии Nerd's: Санкт-Петербург, улица Большая Конюшенная дом 19/8" data-object-fit="contain">
                 <div class="contacts-wrapper">
                     <div class="company-contacts">
                         <div class="company-name">N&#235;rds design studio</div>
@@ -230,5 +230,19 @@
             </form>
             <button class="modal-close" type="button">Закрыть окно "Напишите нам"</button>
         </section>
+        
+        <script>
+            if ('objectFit' in document.documentElement.style === false) {
+	document.addEventListener('DOMContentLoaded', function () {
+		Array.prototype.forEach.call(document.querySelectorAll('img[data-object-fit]'), function (image) {
+			(image.runtimeStyle || image.style).background = 'url("' + image.src + '") no-repeat 50%/' + (image.currentStyle ? image.currentStyle['object-fit'] : image.getAttribute('data-object-fit'));
+
+			image.src = 'data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'' + image.width + '\' height=\'' + image.height + '\'%3E%3C/svg%3E';
+		});
+	});
+}
+        
+        
+        </script>
     </body>
 </html>
