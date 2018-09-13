@@ -2134,6 +2134,10 @@ img[data-object-fit='contain']
     box-shadow: 0 20px 40px rgba(0, 1, 1, .75);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal h2
 {
     font-size: 45px;
@@ -2348,8 +2352,8 @@ img[data-object-fit='contain']
     font-size: 0;
 
     position: absolute;
-    top: 0;
-    right: -34px;
+    top:78px;
+    right: 90px;
 
     width: 21px;
     height: 21px;

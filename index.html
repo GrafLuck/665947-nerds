@@ -231,5 +231,20 @@
             <button class="modal-close" type="button">Закрыть окно "Напишите нам"</button>
         </section>
         <script src="js/polyfill-object-fit.js"></script>
+          <script>
+            var link = document.querySelector(".mail-btn");
+            var popup = document.querySelector(".modal");
+            var close = popup.querySelector(".modal-close");
+            
+            link.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.add("modal-show");
+            });
+            
+            close.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.remove("modal-show");
+            });
+        </script>
     </body>
 </html>
