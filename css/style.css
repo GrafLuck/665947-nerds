@@ -364,7 +364,9 @@ a
     width: 120px;
     height: 18px;
 
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    
     text-align: center;
 }
 
@@ -979,11 +981,14 @@ a
     min-width: 1200px;
     height: 416px;
     
-    object-fit: contain;
+    -o-object-fit: contain;
+       object-fit: contain;
 }
 
-img[data-object-fit="contain"] {
-	object-fit: contain;
+img[data-object-fit='contain'] 
+{
+	-o-object-fit: contain;
+	   object-fit: contain;
 }
 
 .company-contacts
@@ -2173,11 +2178,50 @@ img[data-object-fit="contain"] {
     border-color: #e74246;
 }
 
+.modal input::-webkit-input-placeholder,
+.modal textarea::-webkit-input-placeholder
+{
+    opacity: .5;
+    color: #444;
+}
+
+.modal input:-ms-input-placeholder,
+.modal textarea:-ms-input-placeholder
+{
+    opacity: .5;
+    color: #444;
+}
+
+.modal input::-ms-input-placeholder,
+.modal textarea::-ms-input-placeholder
+{
+    opacity: .5;
+    color: #444;
+}
+
 .modal input::placeholder,
 .modal textarea::placeholder
 {
     opacity: .5;
     color: #444;
+}
+
+.modal input:focus::-webkit-input-placeholder,
+.modal textarea:focus::-webkit-input-placeholder
+{
+    opacity: 1;
+}
+
+.modal input:focus:-ms-input-placeholder,
+.modal textarea:focus:-ms-input-placeholder
+{
+    opacity: 1;
+}
+
+.modal input:focus::-ms-input-placeholder,
+.modal textarea:focus::-ms-input-placeholder
+{
+    opacity: 1;
 }
 
 .modal input:focus::placeholder,
