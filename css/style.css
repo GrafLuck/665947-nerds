@@ -1296,7 +1296,7 @@ img[data-object-fit='contain']
 .price-filter
 {
     margin: 0;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
     padding: 0;
 }
 
@@ -1430,7 +1430,7 @@ img[data-object-fit='contain']
 
 .grid-filter legend
 {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     
     line-height: 30px;
 }
