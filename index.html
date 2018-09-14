@@ -178,17 +178,17 @@
                         <ul class="social-btn-list">
                             <li>
                                 <a class="social-btn-item social-vk" href="https://vk.com">
-                                <span class="visually-hidden">Вконтакте</span>
+                                    <span class="visually-hidden">Вконтакте</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="social-btn-item social-fb" href="https://facebook.com">
-                                <span class="visually-hidden">Фейсбук</span>
+                                    <span class="visually-hidden">Фейсбук</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="social-btn-item social-in" href="https://instagram.com">
-                                <span class="visually-hidden">Инстаграм</span>
+                                    <span class="visually-hidden">Инстаграм</span>
                                 </a>
                             </li>
                         </ul>
@@ -204,7 +204,7 @@
         </footer>
         <section class="modal">
             <h2>Напишите нам</h2>
-            <form action="https://echo.htmlacademy.ru" method="post">
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="modal-name">
                     <label>
                         <span class="modal-name-label">Ваше имя:</span>
@@ -212,9 +212,9 @@
                         <input type="text" name="name" placeholder="Имя Фамилия">
                     </label>
                 </p>
-                <p class="modal-male">
+                <p class="modal-email">
                     <label>
-                        <span class="modal-male-label">Ваш e-mail:</span>
+                        <span class="modal-email-label">Ваш e-mail:</span>
                         <span class="visually-hidden">например, ivan.petrov@gmail.com</span>
                         <input type="email" name="email" placeholder="email@example.com">
                     </label>
@@ -231,20 +231,6 @@
             <button class="modal-close" type="button">Закрыть окно "Напишите нам"</button>
         </section>
         <script src="js/polyfill-object-fit.js"></script>
-          <script>
-            var link = document.querySelector(".mail-btn");
-            var popup = document.querySelector(".modal");
-            var close = popup.querySelector(".modal-close");
-            
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-            });
-            
-            close.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.remove("modal-show");
-            });
-        </script>
+        <script src="js/modal-email-map.js"></script>
     </body>
 </html>

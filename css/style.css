@@ -328,7 +328,6 @@ a
     margin-bottom: 38px;
 }
 
-
 .slider-btn
 {
     display: block;
@@ -2134,8 +2133,9 @@ img[data-object-fit='contain']
     box-shadow: 0 20px 40px rgba(0, 1, 1, .75);
 }
 
-.modal-show {
-  display: block;
+.modal-show 
+{
+    display: block;
 }
 
 .modal h2
@@ -2196,13 +2196,6 @@ img[data-object-fit='contain']
     color: #444;
 }
 
-.modal input::-ms-input-placeholder,
-.modal textarea::-ms-input-placeholder
-{
-    opacity: .5;
-    color: #444;
-}
-
 .modal input::placeholder,
 .modal textarea::placeholder
 {
@@ -2218,12 +2211,6 @@ img[data-object-fit='contain']
 
 .modal input:focus:-ms-input-placeholder,
 .modal textarea:focus:-ms-input-placeholder
-{
-    opacity: 1;
-}
-
-.modal input:focus::-ms-input-placeholder,
-.modal textarea:focus::-ms-input-placeholder
 {
     opacity: 1;
 }
@@ -2253,7 +2240,7 @@ img[data-object-fit='contain']
     vertical-align: top;
 }
 
-.modal-male
+.modal-email
 {
     display: inline-block;
 
@@ -2289,14 +2276,14 @@ img[data-object-fit='contain']
     border: 2px solid #d7dcde;
 }
 
-.modal-male-label
+.modal-email-label
 {
     display: block;
 
     margin-bottom: 9px;
 }
 
-.modal-male input
+.modal-email input
 {
     box-sizing: border-box;
     width: 360px;
