@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <title>HTML Academy: Нёрдс</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/normalize-min.css" rel="stylesheet">
+        <link href="css/style-min.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -381,21 +381,7 @@
             </form>
             <button class="modal-close" type="button">Закрыть окно "Напишите нам"</button>
         </section>
-        <script src="js/polyfill-object-fit.js"></script>
-        <script>
-            var link = document.querySelector(".mail-btn");
-            var popup = document.querySelector(".modal");
-            var close = popup.querySelector(".modal-close");
-            
-            link.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.add("modal-show");
-            });
-            
-            close.addEventListener("click", function (evt) {
-                evt.preventDefault();
-                popup.classList.remove("modal-show");
-            });
-        </script>
+        <script src="js/polyfill-object-fit-min.js"></script>
+        <script src="js/modal-email-map-min.js"></script>
     </body>
 </html>
